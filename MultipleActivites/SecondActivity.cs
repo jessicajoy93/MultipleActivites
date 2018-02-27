@@ -15,11 +15,15 @@ namespace MultipleActivites
     [Activity(Label = "SecondActivity")]
     public class SecondActivity : Activity
     {
+        private TextView txtMessage;
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             SetContentView(Resource.Layout.Second);
+
+            txtMessage = FindViewById<TextView>(Resource.Id.lblWelcomeMessage);
+            txtMessage.Text = "Hi " + Intent.GetStringExtra("Name");
         }
     }
 }
