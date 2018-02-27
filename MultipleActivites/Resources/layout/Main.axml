@@ -3,5 +3,38 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:minWidth="20px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Enter Your Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblName"
+        android:textAlignment="center"
+        android:textSize="18pt"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="25px"
+        android:layout_marginTop="50px" />
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:paddingBottom="25px"
+        android:paddingTop="50px"
+        android:textAlignment="center"
+        android:textSize="15pt"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px" />
+    <Button
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNext"
+        android:textAlignment="center"
+        android:textSize="30pt"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="25px" />
 </LinearLayout>
