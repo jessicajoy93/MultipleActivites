@@ -1,5 +1,6 @@
 ﻿using System;
 using Android.App;
+using Android.Content;
 using Android.Widget;
 using Android.OS;
 
@@ -25,7 +26,10 @@ namespace MultipleActivites
 
         private void OnNextButtonClick(object sender, EventArgs e)
         {
-            StartActivity(typeof(SecondActivity));
+            //StartActivity(typeof(SecondActivity));
+            var activity2 = new Intent(this, typeof(SecondActivity));
+            activity2.PutExtra("Name", txtName.Text);
+            StartActivity(activity2);
         }
     }
 }
